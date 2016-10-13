@@ -52,7 +52,7 @@ class GoogleRadarSearch():
       for result in googleResponse.results:
          self.resultsN+=1
          markers.append(result['location'])
-         logger.log_result(str(self.resultsN) + " : " + str(result['place_id']))
+         logger.log_result(str(self.resultsN) + " : " + str(result))
    
       return markers
 
